@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce yourself</title>
+    <style>
+        * {
+            background-color: rgb(65, 65, 65);
+        }
+    </style>
+    <style>
+
+    </style>
+</head>
+<body>
+  <div class="block">
+    <p onclick="scrollToSection('1')">Introduce yourself</p>
+    <p onclick="scrollToSection('2')">About</p>
+    <p onclick="scrollToSection('3')">Portfolio</p>
+  </div>
+  <article>
+    <img class="pic1" src="img/Welcome to the self-introduction website..png" alt="">
+  </article>
+  <h1 title="1"><center>Introduce yourself</center></h1>
+  <h2 title="1.1"><center>สวัสดีครับผมชื่อ นายพงศธร มั่นคง กำลังศึกษาอยู่วิทยาลัยเทคนิคขอนแก่น ปวส.1 </center></h2>
+
+  <h3 title="2" id="2"><center>About</center></h3>
+  <img class="pic2" src="img/Adobe_Photoshop_CC_icon.svg.png" alt="">
+  <img class="pic3" src="img/Microsoft-Word-Symbol.png" alt="">
+  <div class="skill-tube">
+    <div class="skill-level"></div>
+
+</div>
+<div class="skill-label">Skill Level: 50%</div>
+
+<div class="skill-tube2">
+    <div class="skill-level2"></div>
+</div>
+<div class="skill-label2">Skill Level: 50%</div>
+<div>
+
+
+
+
+  <h5 title="3" id="3"><center>Portfolio</center></h5>
+  <h6 title="3.3"><center></center></h6>  
+<div>
+
+</div>
+  <script src="Project.js"></script>
+
+  <script>
+    function scrollToSection(sectionId) {
+        var element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var meLink = document.querySelector('p[onclick="scrollToSection(\'1\')"]');
+        var aboutLink = document.querySelector('p[onclick="scrollToSection(\'2\')"]');
+        var portfolioLink = document.querySelector('p[onclick="scrollToSection(\'3\')"]');
+
+        meLink.addEventListener('click', function() {
+            scrollToSection('1');
+        });
+
+        aboutLink.addEventListener('click', function() {
+            scrollToSection('2');
+        });
+
+        portfolioLink.addEventListener('click', function() {
+            scrollToSection('3');
+        });
+    });
+  </script>
+</body>
+</html>
