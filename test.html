@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .skill-tube {
+            width: 300px;
+            height: 40px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-level {
+            height: 100%;
+            width: 80%; /* เปลี่ยนค่านี้เพื่อปรับระดับทักษะ */
+            background-color: #3498db; /* เปลี่ยนสีตามที่ต้องการ */
+            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 0.5s ease; /* เพิ่ม animation ในการเปลี่ยนค่า */
+        }
+
+        .skill-label {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+    <title>Skill Tube</title>
+</head>
+<body>
+    <div class="skill-tube">
+        <div class="skill-level"></div>
+    </div>
+    <div class="skill-label">Skill Level: 80%</div>
+
+    <script>
+        // ในกรณีที่คุณต้องการให้มี animation ในการเปลี่ยนค่าระดับทักษะ
+        document.addEventListener('DOMContentLoaded', function () {
+            const skillLevelElement = document.querySelector('.skill-level');
+            const skillLabelElement = document.querySelector('.skill-label');
+
+            // ค่าระดับทักษะ (เปลี่ยนค่าตามต้องการ)
+            const skillLevel = 80;
+
+            // กำหนดค่าให้กับ width ของ skill-level
+            skillLevelElement.style.width = skillLevel + '%';
+
+            // แสดงค่าทักษะในป้าย
+            skillLabelElement.textContent = 'Skill Level: ' + skillLevel + '%';
+        });
+    </script>
+</body>
+</html>
