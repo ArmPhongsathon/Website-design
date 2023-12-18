@@ -16,7 +16,7 @@
 </head>
 <body>
   <div class="block">
-    <p onclick="scrollToSection('1')">Introduce yourself</p>
+    <p onclick="scrollToSection('1')">ME</p>
     <p onclick="scrollToSection('2')">About</p>
     <p onclick="scrollToSection('3')">Portfolio</p>
   </div>
@@ -68,14 +68,19 @@
             scrollToSection('1');
         });
 
-        aboutLink.addEventListener('click', function() {
+        meLink.addEventListener('click', function() {
             scrollToSection('2');
         });
 
-        portfolioLink.addEventListener('click', function() {
+        aboutLink.addEventListener('click', function() {
             scrollToSection('3');
         });
+
+        portfolioLink.addEventListener('click', function() {
+            scrollToSection('4');
+        });
     });
-  </script>
+</script>
+
 </body>
 </html>
