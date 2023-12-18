@@ -5,50 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduce yourself</title>
-    <style>
-        * {
-            background-color: rgb(65, 65, 65);
-        }
-    </style>
-    <style>
-
-    </style>
 </head>
 <body>
-  <div class="block">
-    <p onclick="scrollToSection('1')">ME</p>
-    <p onclick="scrollToSection('2')">About</p>
-    <p onclick="scrollToSection('3')">Portfolio</p>
-  </div>
-  <article>
-    <img class="pic1" src="img/Welcome to the self-introduction website..png" alt="">
-  </article>
-  <h1 title="1"><center>Introduce yourself</center></h1>
-  <h2 title="1.1"><center>สวัสดีครับผมชื่อ นายพงศธร มั่นคง กำลังศึกษาอยู่วิทยาลัยเทคนิคขอนแก่น ปวส.1 </center></h2>
 
-  <h3 title="2" id="2"><center>About</center></h3>
-  <img class="pic2" src="img/Adobe_Photoshop_CC_icon.svg.png" alt="">
-  <img class="pic3" src="img/Microsoft-Word-Symbol.png" alt="">
-  <div class="skill-tube">
-    <div class="skill-level"></div>
+  <header class="block">
+      <div class="menu">
+        <p onclick="scrollToSection('1')">ME</p>
+        <p onclick="scrollToSection('2')">About</p>
+      </div>
+     
+        
+        <div class="text-content">
+            <span style="--i:1">P</span>
+            <span style="--i:2">r</span>
+            <span style="--i:3">o</span>
+            <span style="--i:4">j</span>
+            <span style="--i:5">e</span>
+            <span style="--i:6">c</span>
+            <span style="--i:7">t</span>
+            &nbsp;
+            &nbsp;
+            <span style="--i:8">B</span>
+            <span style="--i:9">y</span>
+            &nbsp;
+            &nbsp;
+            <span style="--i:10">P</span>
+            <span style="--i:11">h</span>
+            <span style="--i:12">o</span>
+            <span style="--i:13">n</span>
+            <span style="--i:14">s</span>
+            <span style="--i:15">a</span>
+            <span style="--i:16">t</span>
+            <span style="--i:17">h</span>
+            <span style="--i:18">o</span>
+            <span style="--i:19">n</span>
+            <span style="--i:20">g</span>
+         </div>
 
-</div>
-<div class="skill-label">Skill Level: 50%</div>
 
-<div class="skill-tube2">
-    <div class="skill-level2"></div>
-</div>
-<div class="skill-label2">Skill Level: 50%</div>
-<div>
+  </header>
 
+  <section class="content-2">
+    <div>
+        <h1 title="1"><center>Introduce yourself</center></h1>
+        <h2 title="1.1"><center>สวัสดีครับผมชื่อ นายพงศธร มั่นคง กำลังศึกษาอยู่วิทยาลัยเทคนิคขอนแก่น ปวส.1 </center></h2>
+      </div>
+  </section>
 
+  <section class="content-3">
+        <h3 title="2" id="2"><center>About</center></h3>
+        <img class="pic2" src="img/Adobe_Photoshop_CC_icon.svg.png" alt="">
+        <img class="pic3" src="img/Microsoft-Word-Symbol.png" alt="">
+        <div class="skill-tube">
+            <div class="skill-level"></div>
 
+        </div>
+        <div class="skill-label">Skill Level: 50%</div>
 
-  <h5 title="3" id="3"><center>Portfolio</center></h5>
-  <h6 title="3.3"><center></center></h6>  
-<div>
+        <div class="skill-tube2">
+            <div class="skill-level2"></div>
+        </div>
+        <div class="skill-label2">Skill Level: 50%</div>
+        <div>
+  </section>
 
-</div>
+  
+
   <script src="Project.js"></script>
 
   <script>
@@ -62,7 +84,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         var meLink = document.querySelector('p[onclick="scrollToSection(\'1\')"]');
         var aboutLink = document.querySelector('p[onclick="scrollToSection(\'2\')"]');
-        var portfolioLink = document.querySelector('p[onclick="scrollToSection(\'3\')"]');
+        
 
         meLink.addEventListener('click', function() {
             scrollToSection('1');
