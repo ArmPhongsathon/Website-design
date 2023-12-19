@@ -203,10 +203,10 @@ img.pic3 {
 }
 .text-content span {
   font-weight: 600;
-  text-shadow: 0 0 1rem black;
+  text-shadow: 8px 8px 1rem black;
   font-size: 3.5rem;
   display: inline-block;
-  color: #fff;
+  color: lightcyan;
   animation: waviy 1s infinite;
   animation-delay: calc(.1s * var(--i));
   
