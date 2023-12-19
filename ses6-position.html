@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจัดการเลย์เอาท์เว็บเพจด้วย Position</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 4000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #box-1{
+            background-color: orange;
+            position: static;
+            left: 50px;
+            top: 50px;
+        }
+        #box-2{
+            background-color: green;
+            position: absolute;
+            left: 20px;
+            top: 100px;
+        }
+        #box-3{
+            background-color: purple;
+            position: absolute;
+            right: 10px;
+        }
+        #box-4{
+            background-color: pink;
+            position: fixed;
+        }
+        #box-5{
+            background-color: red;
+            position: sticky;
+            top: 0px;
+            
+        }
+        #box-6{
+            background-color: darkblue;
+            padding: 400px;
+            position: sticky;
+            top: 0px;
+        }
+        .mycontainer{
+            width: 500px;
+            height: 200px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <a href="#box-6"></a>
+    <h1>การจัดการเลย์เอาท์เว็บเพจด้วย Position</h1>
+    <ul> การจัดตำแหน่งด้วย position
+        <li>
+            static ค่าปกติ default
+        </li>
+        <li>
+            relative จัดวางตามตำแหน่ง
+        </li>
+        <li>
+            absolute จัดวางตามเอลิเมนต์แม่
+        </li>
+        <li>
+            fixed อยู่ในตำแหน่งเดิม
+        </li>
+        <li>
+            sticky ติดขอบเมื่อเลื่อนไปถึง
+        </li>
+    </ul>
+    <hr>
+    <div id="box-1" class="box"></div>
+    <div class="mycontainer">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <div id="box-6" class="box"></div>
+</body>
+</html>
